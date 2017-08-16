@@ -1,0 +1,12 @@
+CLUSTERGEN STATUS REPORT FOLLOWS
+
+Importing centroid vector to universe:
+    3 Centroid imports SUCCESSFUL.
+    2 Centroid imports FAILED.
+
+Generating Points:
+    Generating 4 points around centroid 1 ... Done.
+    Generating 3 points around centroid 2 ... Done.
+    Generating 3 points around centroid 3 ... Done.
+
+    11 points generated around 3 centroids.
