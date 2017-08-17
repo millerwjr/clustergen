@@ -3,38 +3,26 @@
 //
 
 
-    #ifndef CLUSTERGEN_H
-    #define CLUSTERGEN_H
+#ifndef CLUSTERGEN_H
+#define CLUSTERGEN_H
 
     #include <fstream>
     #include <vector>
-    #include <string>
+
+    double default_distribution(double &);        // The default distribution function (Normal)
 
     class cluster_set {
-
         std::vector<std::vector<double>> centroids;   // Centroids around which to evenly generate all points
+        double (*distribution)(double &);             // Changeable pointer to a distribution function
 
-        std::string file_out_str;   // The output file name - only settable on construction
-        std::string file_rpt_str;   // The report file name - only settable on construction
-        std::ofstream file_out;     // Instanced on clustergen() to prevent multiple outputs to the same file
-        std::ofstream file_rpt;     // Appends throughout program
-
-        char delim_in;    // Defaults to CSV - only used in file import
-        char delim_out;   // Defaults to CSV
+        void import_centroids(std::vector<std::vector<double>> &);   // Import centroids from vector
 
     public:
+        cluster_set(std::ifstream &, char);                // Import centroids from file with specified delimiter
+        cluster_set(std::vector<std::vector<double>> &);   // Import centroids from vector on construction
 
-        cluster_set();                                           // Default settings
-        cluster_set(const std::string &, const std::string &);   // User specified output and report file
-
-        void import_centroids(const std::string &);                        // File import - uses vector import
-        void import_centroids(const std::vector<std::vector<double>> &);   // Vector import - primary import algo
-
-        void clustergen(const unsigned int);   // Primary algorithm - generates [unsigned int] number of points
-
-        void set_delim_in(const char d) { this->delim_in = d; };     // User specified delimiter for input
-        void set_delim_out(const char d) { this->delim_out = d; };   // User specified delimiter for output
-
+        void clustergen(unsigned int, std::ostream &, char);
+        void set_distribution(double (*new_distribution)(double &)) { this->distribution = new_distribution; }
     };
 
-    #endif //CLUSTERGEN_H
+#endif //CLUSTERGEN_H

@@ -2,48 +2,46 @@
 // Copyright 2017 Wyatt Miller
 //
 
-#include "clustergen.h"
+    #include "clustergen.h"
+    #include <chrono>
+    #include <iostream>
+    #include <random>
 
-int main() {
+    double new_distribution(double & dimension) {
+        static std::default_random_engine gen(std::chrono::system_clock::now().time_since_epoch().count());   // Random seed
+        // static std::default_random_engine gen(std::random_device{}());   // Not randomizing??
+        std::uniform_int_distribution<int> distr(-5, 5);
+        return dimension + 10 * distr(gen);
+    }
 
-    std::vector<std::vector<double>> v = {{11,22}, {33,44}, {55,66,77}, {88,99}, {100}};
-    std::vector<std::vector<double>> v2 = {{110,120}, {130,140}, {150,160,170}, {180,190}, {200}};
+    int main() {
 
+        std::vector<std::vector<double>> v = {{-100, -100},
+                                              {100,  100},
+                                              {1000, 1000}};
+        std::vector<std::vector<double>> v2 = {{-100, -100},
+                                               {1},
+                                               {100,  100},
+                                               {1,    2, 3},
+                                               {1000, 1000}}; // Dimensional mismatch
 
-    cluster_set my_clusters;
-    // Vector import with default out file, reporting file, and delimiters.
-    my_clusters.import_centroids(v);
-    my_clusters.clustergen(10);
+        std::ostream &output_console = std::cout;
+        std::ofstream output_file;
 
-    cluster_set my_clusters1("1_clustergen_out.dat", "1_clustergen_rpt.dat");
-    // Vector import with user specified out file and reporting file, and default delimiters.
-    my_clusters1.import_centroids(v2);
-    my_clusters1.clustergen(11);
+        cluster_set my_clusters(v);                        // Vector constructor
+        my_clusters.clustergen(11, output_console, ',');   // Generate 10 random points to the console (',' delimited)
 
-    cluster_set my_clusters2("2_clustergen_out.dat", "2_clustergen_rpt.dat");
-    // Vector import with user specified out file, reporting file, and delimiters.
-    my_clusters2.set_delim_in(' ');
-    my_clusters2.set_delim_out('@');
-    my_clusters2.import_centroids(v);
-    my_clusters2.clustergen(12);
+        std::ofstream out2;
+        out2.open("clustergen_out_2.dat");
+        cluster_set my_clusters2(v2);                       // Vector constructor with invalid dimensional points (omitted)
+        my_clusters2.set_distribution(new_distribution);    // Setting a user-defined distribution
+        my_clusters2.clustergen(11, out2, ',');             // Generate 11 random points to "clustergen_out_2.dat" (',' delimited)
 
-    cluster_set my_clusters3("3_clustergen_out.dat", "3_clustergen_rpt.dat");
-    // File import with default out file, reporting file, and delimiters.
-    my_clusters3.set_delim_in(' ');
-    my_clusters3.import_centroids("clustergen_in.dat");
-    my_clusters3.clustergen(13);
+        std::ifstream v3;
+        v3.open("clustergen_in.dat");
+        std::ofstream out3;
+        out3.open("clustergen_out_3.dat");
+        cluster_set my_clusters3(v3,'$');          // File const. with user-spec. delimiter - blank lines and invalid dimensions omitted
+        my_clusters3.clustergen(13, out3, '@');    // Generate 13 random points to "clustergen_out_3.dat" (',' delimited)
 
-    cluster_set my_clusters4("4_clustergen_out.dat", "4_clustergen_rpt.dat");
-    // File import with user specified out file and reporting file, and default delimiters.
-    my_clusters4.set_delim_in('#');
-    my_clusters4.import_centroids("clustergen_in2.dat");
-    my_clusters4.clustergen(14);
-
-    cluster_set my_clusters5("5_clustergen_out.dat", "5_clustergen_rpt.dat");
-    // File import with user specified out file, reporting file, and delimiters.
-    my_clusters5.set_delim_in('#');
-    my_clusters5.set_delim_out('@');
-    my_clusters5.import_centroids("clustergen_in2.dat");
-    my_clusters5.clustergen(15);
-
-}
+    }
