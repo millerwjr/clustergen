@@ -63,8 +63,8 @@
       <file leaf-file-name="clustergen.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clustergen.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="447">
+              <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
               <folding>
                 <element signature="e#43#66#0" expanded="true" />
               </folding>
@@ -388,12 +388,12 @@
       <workItem from="1502487631526" duration="41000" />
       <workItem from="1502487944214" duration="2155000" />
       <workItem from="1502522221142" duration="46102000" />
-      <workItem from="1502842999138" duration="53921000" />
+      <workItem from="1502842999138" duration="54704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140577000" />
+    <option name="totallyTimeSpent" value="141360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -669,8 +669,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clustergen.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="447">
+          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
           <folding>
             <element signature="e#43#66#0" expanded="true" />
           </folding>

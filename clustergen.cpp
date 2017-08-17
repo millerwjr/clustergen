@@ -75,7 +75,7 @@
                     if (temp_point_iter != temp_point.begin()) { output << delimiter; }
                     output << (*temp_point_iter);
                 }
-                if (subset) { output << "\n"; };
+                if (subset - 1) { output << "\n"; };
                 --subset;
                 if (rem) { --rem; }   // Evenly distributes points across centroids
             }
