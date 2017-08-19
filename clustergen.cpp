@@ -34,8 +34,8 @@
                 }
                 temp_centroid_vector.push_back(temp_point);
             }
-            this->import_centroids(temp_centroid_vector);
         }
+        this->import_centroids(temp_centroid_vector);
     }
 
     // Import centroids from vector on construction
@@ -44,7 +44,7 @@
         this->import_centroids(centroid_vector);
     }
 
-    // Primary centroid import function
+    // Primary centroid import function - Assures dimensional integrity by comparing all intake to the first point in the [centroids] vector
     void cluster_set::import_centroids(std::vector<std::vector<double>> & centroid_vector) {
         for (auto centroid_vector_iter = centroid_vector.begin(); centroid_vector_iter != centroid_vector.end(); ++centroid_vector_iter) {
             if (this->centroids.empty()) {
@@ -62,8 +62,9 @@
             return;
         }
         if (k < this->centroids.size()) { k = this->centroids.size(); }
+        unsigned int ct = 0;
         const unsigned int n = k / this->centroids.size();   // Evenly distributes points across centroids
-        unsigned rem = k % this->centroids.size();           // Evenly distributes points across centroids
+        unsigned int rem = k % this->centroids.size();           // Evenly distributes points across centroids
         for (auto centroid_iter = this->centroids.begin(); centroid_iter != this->centroids.end(); ++centroid_iter) {
             unsigned int subset = n + (rem ? 1 : 0);         // Evenly distributes points across centroids
             while (subset) {
@@ -77,8 +78,8 @@
                 }
                 if (subset - 1) { output << "\n"; };
                 --subset;
-                if (rem) { --rem; }   // Evenly distributes points across centroids
             }
+            if (rem) { --rem; }   // Evenly distributes points across centroids
             auto centroid_iter_peek = centroid_iter;
             ++centroid_iter_peek;
             if (centroid_iter_peek != centroids.end()) { output << "\n"; };
