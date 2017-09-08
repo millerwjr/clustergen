@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/kc_clustergen.cpp
+kc_clustergen.h
+D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/kc_clustergen.h
+chrono
+-
+iostream
+-
+random
+-
+sstream
+-
+
+D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/kc_clustergen.h
+fstream
+-
+vector
+-
+
+D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/main.cpp
+kc_clustergen.h
+D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/kc_clustergen.h
+chrono
+-
+iostream
+-
+random
+-
+

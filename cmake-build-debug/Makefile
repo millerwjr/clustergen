@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files (x86)\JetBrains\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files (x86)\JetBrains\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named clustergen
+# Target rules for targets named kc_clustergen
 
 # Build rule for target.
-clustergen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 clustergen
-.PHONY : clustergen
+kc_clustergen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 kc_clustergen
+.PHONY : kc_clustergen
 
 # fast build rule for target.
-clustergen/fast:
-	$(MAKE) -f CMakeFiles\clustergen.dir\build.make CMakeFiles/clustergen.dir/build
-.PHONY : clustergen/fast
+kc_clustergen/fast:
+	$(MAKE) -f CMakeFiles\kc_clustergen.dir\build.make CMakeFiles/kc_clustergen.dir/build
+.PHONY : kc_clustergen/fast
 
-clustergen.obj: clustergen.cpp.obj
+kc_clustergen.obj: kc_clustergen.cpp.obj
 
-.PHONY : clustergen.obj
+.PHONY : kc_clustergen.obj
 
 # target to build an object file
-clustergen.cpp.obj:
-	$(MAKE) -f CMakeFiles\clustergen.dir\build.make CMakeFiles/clustergen.dir/clustergen.cpp.obj
-.PHONY : clustergen.cpp.obj
+kc_clustergen.cpp.obj:
+	$(MAKE) -f CMakeFiles\kc_clustergen.dir\build.make CMakeFiles/kc_clustergen.dir/kc_clustergen.cpp.obj
+.PHONY : kc_clustergen.cpp.obj
 
-clustergen.i: clustergen.cpp.i
+kc_clustergen.i: kc_clustergen.cpp.i
 
-.PHONY : clustergen.i
+.PHONY : kc_clustergen.i
 
 # target to preprocess a source file
-clustergen.cpp.i:
-	$(MAKE) -f CMakeFiles\clustergen.dir\build.make CMakeFiles/clustergen.dir/clustergen.cpp.i
-.PHONY : clustergen.cpp.i
+kc_clustergen.cpp.i:
+	$(MAKE) -f CMakeFiles\kc_clustergen.dir\build.make CMakeFiles/kc_clustergen.dir/kc_clustergen.cpp.i
+.PHONY : kc_clustergen.cpp.i
 
-clustergen.s: clustergen.cpp.s
+kc_clustergen.s: kc_clustergen.cpp.s
 
-.PHONY : clustergen.s
+.PHONY : kc_clustergen.s
 
 # target to generate assembly for a file
-clustergen.cpp.s:
-	$(MAKE) -f CMakeFiles\clustergen.dir\build.make CMakeFiles/clustergen.dir/clustergen.cpp.s
-.PHONY : clustergen.cpp.s
+kc_clustergen.cpp.s:
+	$(MAKE) -f CMakeFiles\kc_clustergen.dir\build.make CMakeFiles/kc_clustergen.dir/kc_clustergen.cpp.s
+.PHONY : kc_clustergen.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -155,7 +155,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\clustergen.dir\build.make CMakeFiles/clustergen.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\kc_clustergen.dir\build.make CMakeFiles/kc_clustergen.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -164,7 +164,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\clustergen.dir\build.make CMakeFiles/clustergen.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\kc_clustergen.dir\build.make CMakeFiles/kc_clustergen.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -173,7 +173,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\clustergen.dir\build.make CMakeFiles/clustergen.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\kc_clustergen.dir\build.make CMakeFiles/kc_clustergen.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -182,12 +182,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... clustergen
+	@echo ... kc_clustergen
 	@echo ... edit_cache
-	@echo ... clustergen.obj
-	@echo ... clustergen.i
-	@echo ... clustergen.s
+	@echo ... rebuild_cache
+	@echo ... kc_clustergen.obj
+	@echo ... kc_clustergen.i
+	@echo ... kc_clustergen.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

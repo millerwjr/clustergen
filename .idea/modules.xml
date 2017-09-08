@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/clustergen.iml" filepath="$PROJECT_DIR$/.idea/clustergen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/kc_clustergen.iml" filepath="$PROJECT_DIR$/.idea/kc_clustergen.iml" />
     </modules>
   </component>
 </project>

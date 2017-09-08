@@ -59,39 +59,39 @@ CMAKE_SOURCE_DIR = "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen"
 CMAKE_BINARY_DIR = "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/clustergen.dir
+# Target rules for target CMakeFiles/kc_clustergen.dir
 
 # All Build rule for target.
-CMakeFiles/clustergen.dir/all:
-	$(MAKE) -f CMakeFiles\clustergen.dir\build.make CMakeFiles/clustergen.dir/depend
-	$(MAKE) -f CMakeFiles\clustergen.dir\build.make CMakeFiles/clustergen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target clustergen"
-.PHONY : CMakeFiles/clustergen.dir/all
+CMakeFiles/kc_clustergen.dir/all:
+	$(MAKE) -f CMakeFiles\kc_clustergen.dir\build.make CMakeFiles/kc_clustergen.dir/depend
+	$(MAKE) -f CMakeFiles\kc_clustergen.dir\build.make CMakeFiles/kc_clustergen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target kc_clustergen"
+.PHONY : CMakeFiles/kc_clustergen.dir/all
 
 # Include target in all.
-all: CMakeFiles/clustergen.dir/all
+all: CMakeFiles/kc_clustergen.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/clustergen.dir/rule: cmake_check_build_system
+CMakeFiles/kc_clustergen.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug\CMakeFiles" 3
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/clustergen.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/kc_clustergen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/clustergen.dir/rule
+.PHONY : CMakeFiles/kc_clustergen.dir/rule
 
 # Convenience name for target.
-clustergen: CMakeFiles/clustergen.dir/rule
+kc_clustergen: CMakeFiles/kc_clustergen.dir/rule
 
-.PHONY : clustergen
-
-# clean rule for target.
-CMakeFiles/clustergen.dir/clean:
-	$(MAKE) -f CMakeFiles\clustergen.dir\build.make CMakeFiles/clustergen.dir/clean
-.PHONY : CMakeFiles/clustergen.dir/clean
+.PHONY : kc_clustergen
 
 # clean rule for target.
-clean: CMakeFiles/clustergen.dir/clean
+CMakeFiles/kc_clustergen.dir/clean:
+	$(MAKE) -f CMakeFiles\kc_clustergen.dir\build.make CMakeFiles/kc_clustergen.dir/clean
+.PHONY : CMakeFiles/kc_clustergen.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/kc_clustergen.dir/clean
 
 .PHONY : clean
 

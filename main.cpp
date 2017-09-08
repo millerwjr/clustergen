@@ -2,7 +2,7 @@
 // Copyright 2017 Wyatt Miller
 //
 
-    #include "clustergen.h"
+    #include "kc_clustergen.h"
     #include <chrono>
     #include <iostream>
     #include <random>

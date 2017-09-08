@@ -94,7 +94,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/clustergen
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/kc_clustergen
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/MinGW/bin/ld.exe
@@ -127,7 +127,7 @@ CMAKE_OBJCOPY:FILEPATH=C:/MinGW/bin/objcopy.exe
 CMAKE_OBJDUMP:FILEPATH=C:/MinGW/bin/objdump.exe
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=clustergen
+CMAKE_PROJECT_NAME:STATIC=kc_clustergen
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/MinGW/bin/ranlib.exe
@@ -188,10 +188,10 @@ CMAKE_STRIP:FILEPATH=C:/MinGW/bin/strip.exe
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-clustergen_BINARY_DIR:STATIC=D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/cmake-build-debug
+kc_clustergen_BINARY_DIR:STATIC=D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/cmake-build-debug
 
 //Value Computed by CMake
-clustergen_SOURCE_DIR:STATIC=D:/Google Drive/Projects/Programs/GitHub/kc_clustergen
+kc_clustergen_SOURCE_DIR:STATIC=D:/Google Drive/Projects/Programs/GitHub/kc_clustergen
 
 
 ########################
