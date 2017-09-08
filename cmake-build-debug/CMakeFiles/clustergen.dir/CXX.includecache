@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-D:/Google Drive/Projects/Programs/GitHub/clustergen/clustergen.cpp
+D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/clustergen.cpp
 clustergen.h
-D:/Google Drive/Projects/Programs/GitHub/clustergen/clustergen.h
+D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/clustergen.h
 chrono
 -
 iostream
@@ -18,15 +18,15 @@ random
 sstream
 -
 
-D:/Google Drive/Projects/Programs/GitHub/clustergen/clustergen.h
+D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/clustergen.h
 fstream
 -
 vector
 -
 
-D:/Google Drive/Projects/Programs/GitHub/clustergen/main.cpp
+D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/main.cpp
 clustergen.h
-D:/Google Drive/Projects/Programs/GitHub/clustergen/clustergen.h
+D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/clustergen.h
 chrono
 -
 iostream

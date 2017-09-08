@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\JetBrains\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Google Drive\Projects\Programs\GitHub\clustergen"
+CMAKE_SOURCE_DIR = "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Google Drive\Projects\Programs\GitHub\clustergen\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/clustergen.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/clustergen.dir/flags.make
 
 CMakeFiles/clustergen.dir/main.cpp.obj: CMakeFiles/clustergen.dir/flags.make
 CMakeFiles/clustergen.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Google Drive\Projects\Programs\GitHub\clustergen\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clustergen.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\clustergen.dir\main.cpp.obj -c "D:\Google Drive\Projects\Programs\GitHub\clustergen\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clustergen.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\clustergen.dir\main.cpp.obj -c "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\main.cpp"
 
 CMakeFiles/clustergen.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clustergen.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Google Drive\Projects\Programs\GitHub\clustergen\main.cpp" > CMakeFiles\clustergen.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\main.cpp" > CMakeFiles\clustergen.dir\main.cpp.i
 
 CMakeFiles/clustergen.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clustergen.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Google Drive\Projects\Programs\GitHub\clustergen\main.cpp" -o CMakeFiles\clustergen.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\main.cpp" -o CMakeFiles\clustergen.dir\main.cpp.s
 
 CMakeFiles/clustergen.dir/main.cpp.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/clustergen.dir/main.cpp.obj.provides.build: CMakeFiles/clustergen.dir
 
 CMakeFiles/clustergen.dir/clustergen.cpp.obj: CMakeFiles/clustergen.dir/flags.make
 CMakeFiles/clustergen.dir/clustergen.cpp.obj: ../clustergen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Google Drive\Projects\Programs\GitHub\clustergen\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clustergen.dir/clustergen.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\clustergen.dir\clustergen.cpp.obj -c "D:\Google Drive\Projects\Programs\GitHub\clustergen\clustergen.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clustergen.dir/clustergen.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\clustergen.dir\clustergen.cpp.obj -c "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\clustergen.cpp"
 
 CMakeFiles/clustergen.dir/clustergen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clustergen.dir/clustergen.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Google Drive\Projects\Programs\GitHub\clustergen\clustergen.cpp" > CMakeFiles\clustergen.dir\clustergen.cpp.i
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\clustergen.cpp" > CMakeFiles\clustergen.dir\clustergen.cpp.i
 
 CMakeFiles/clustergen.dir/clustergen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clustergen.dir/clustergen.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Google Drive\Projects\Programs\GitHub\clustergen\clustergen.cpp" -o CMakeFiles\clustergen.dir\clustergen.cpp.s
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\clustergen.cpp" -o CMakeFiles\clustergen.dir\clustergen.cpp.s
 
 CMakeFiles/clustergen.dir/clustergen.cpp.obj.requires:
 
@@ -118,7 +118,7 @@ clustergen.exe: CMakeFiles/clustergen.dir/build.make
 clustergen.exe: CMakeFiles/clustergen.dir/linklibs.rsp
 clustergen.exe: CMakeFiles/clustergen.dir/objects1.rsp
 clustergen.exe: CMakeFiles/clustergen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Google Drive\Projects\Programs\GitHub\clustergen\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable clustergen.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable clustergen.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\clustergen.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -136,6 +136,6 @@ CMakeFiles/clustergen.dir/clean:
 .PHONY : CMakeFiles/clustergen.dir/clean
 
 CMakeFiles/clustergen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Google Drive\Projects\Programs\GitHub\clustergen" "D:\Google Drive\Projects\Programs\GitHub\clustergen" "D:\Google Drive\Projects\Programs\GitHub\clustergen\cmake-build-debug" "D:\Google Drive\Projects\Programs\GitHub\clustergen\cmake-build-debug" "D:\Google Drive\Projects\Programs\GitHub\clustergen\cmake-build-debug\CMakeFiles\clustergen.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen" "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen" "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug" "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug" "D:\Google Drive\Projects\Programs\GitHub\kc_clustergen\cmake-build-debug\CMakeFiles\clustergen.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/clustergen.dir/depend
 

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Google Drive/Projects/Programs/GitHub/clustergen/clustergen.cpp" "D:/Google Drive/Projects/Programs/GitHub/clustergen/cmake-build-debug/CMakeFiles/clustergen.dir/clustergen.cpp.obj"
-  "D:/Google Drive/Projects/Programs/GitHub/clustergen/main.cpp" "D:/Google Drive/Projects/Programs/GitHub/clustergen/cmake-build-debug/CMakeFiles/clustergen.dir/main.cpp.obj"
+  "D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/clustergen.cpp" "D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/cmake-build-debug/CMakeFiles/clustergen.dir/clustergen.cpp.obj"
+  "D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/main.cpp" "D:/Google Drive/Projects/Programs/GitHub/kc_clustergen/cmake-build-debug/CMakeFiles/clustergen.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

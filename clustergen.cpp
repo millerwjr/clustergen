@@ -17,7 +17,7 @@
     }
 
     // Import centroids from file with specified delimiter into a temporary vector - calls import_centroids()
-    cluster_set::cluster_set(std::ifstream & input_file, char delimiter) {
+    kc::cluster_set::cluster_set(std::ifstream & input_file, char delimiter) {
         this->distribution = default_distribution;
         std::string line;
         std::vector<std::vector<double>> temp_centroid_vector;
@@ -39,13 +39,13 @@
     }
 
     // Import centroids from vector on construction
-    cluster_set::cluster_set(std::vector<std::vector<double>> & centroid_vector) {
+    kc::cluster_set::cluster_set(std::vector<std::vector<double>> & centroid_vector) {
         this->distribution = default_distribution;
         this->import_centroids(centroid_vector);
     }
 
     // Primary centroid import function - Assures dimensional integrity by comparing all intake to the first point in the [centroids] vector
-    void cluster_set::import_centroids(std::vector<std::vector<double>> & centroid_vector) {
+    void kc::cluster_set::import_centroids(std::vector<std::vector<double>> & centroid_vector) {
         for (auto centroid_vector_iter = centroid_vector.begin(); centroid_vector_iter != centroid_vector.end(); ++centroid_vector_iter) {
             if (this->centroids.empty()) {
                 this->centroids.push_back(*centroid_vector_iter);
@@ -56,7 +56,7 @@
     }
 
     // Primary cluster generator - aborts if no centroids have been imported.
-    void cluster_set::clustergen(unsigned int k, std::ostream & output, char delimiter) {
+    void kc::cluster_set::clustergen(unsigned int k, std::ostream & output, char delimiter) {
         if (this->centroids.empty()) {
             output << "ERROR: No centroids have been imported. Aborting operation.";
             return;

@@ -69,7 +69,7 @@
         // Generate 10 centroids, uniformly distributed integers between -100 and 100 in 3 dimensions
         std::ofstream centroid_out;
         centroid_out.open("centroids.dat");
-        cluster_set centroids(v4);
+        kc::cluster_set centroids(v4);
         centroids.set_distribution(uni_distribution);
         centroids.clustergen(5, centroid_out, ',');
         centroid_out.close();   // Need to close out - "centroids.dat" is used in the following code
@@ -79,7 +79,7 @@
         v5.open("centroids.dat");
         std::ofstream test_data_out;
         test_data_out.open("test_data.dat");
-        cluster_set test_data(v5,',');
+        kc::cluster_set test_data(v5,',');
         test_data.clustergen(4000, test_data_out, ',');
 
 
