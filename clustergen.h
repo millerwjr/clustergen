@@ -6,10 +6,10 @@
 #ifndef CLUSTERGEN_H
 #define CLUSTERGEN_H
 
-    #include <fstream>
-    #include <vector>
+#include <fstream>
+#include <vector>
 
-    double default_distribution(double &);        // The default distribution function (Normal)
+namespace kc {
 
     class cluster_set {
         std::vector<std::vector<double>> centroids;   // Centroids around which to evenly generate all points
@@ -22,7 +22,10 @@
         cluster_set(std::vector<std::vector<double>> &);   // Import centroids from vector on construction
 
         void clustergen(unsigned int, std::ostream &, char);
+
         void set_distribution(double (*new_distribution)(double &)) { this->distribution = new_distribution; }
     };
+
+}
 
 #endif //CLUSTERGEN_H
