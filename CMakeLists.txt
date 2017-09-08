@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(clustergen)
+project(kc_clustergen)
 
 set(CMAKE_CXX_STANDARD 11)
 
