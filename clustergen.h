@@ -3,8 +3,8 @@
 //
 
 
-#ifndef CLUSTERGEN_H
-#define CLUSTERGEN_H
+#ifndef KC_CLUSTERGEN_H
+#define KC_CLUSTERGEN_H
 
 #include <fstream>
 #include <vector>
@@ -28,4 +28,4 @@ namespace kc {
 
 }
 
-#endif //CLUSTERGEN_H
+#endif //KC_CLUSTERGEN_H
